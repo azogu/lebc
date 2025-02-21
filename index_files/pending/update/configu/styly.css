@@ -1,0 +1,65 @@
+/* Conteneur de chaque champ */
+#input-container {
+    position: relative;
+    margin-bottom: 18px;
+    height: 60px;
+    /* Espace pour l'icône */
+}
+
+/* Style des labels */
+#input-container>label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 12px;
+    color: #73808c;
+}
+
+/* Style des champs d'entrée */
+#input-container>input {
+    outline: none;
+    width: 100%;
+    padding: 20px 20px 10px 40px;
+    /* Espace pour l'icône */
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(59, 74, 87);
+    transition: all 0.3s ease;
+}
+
+/* Positionnement des icônes */
+#input-container>.material-symbols-outlined {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #73808c;
+}
+
+/* Style pour les images de type de carte */
+#cardTypeImage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: auto;
+}
+
+/* Conteneur pour gérer la largeur */
+.container-city {
+    width: 49.5%;
+}
+
+/* Réduire la taille de #cardTypeImage en mode mobile */
+@media screen and (max-width: 767px) {
+    #cardTypeImage {
+        top: 12px;
+        width: 24px;
+        /* Taille réduite pour les écrans mobiles */
+        height: auto;
+    }
+}
